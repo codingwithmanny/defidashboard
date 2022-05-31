@@ -122,7 +122,7 @@ function App() {
       </Grid>
       <Grid item xs={12}>
         <FormControl>
-          <InputLabel>Age</InputLabel>
+          <InputLabel>Chain</InputLabel>
           <Select
             value={selectedChain}
             label="tokenSelector"
