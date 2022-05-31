@@ -51,6 +51,7 @@ function App() {
     }, {} as any)
   );
 
+  //fetchAccountBalanceByChain
   useEffect(() => {
     if (account && account.address) {
       supportedChains.forEach((chain) => {
@@ -64,7 +65,7 @@ function App() {
             });
           }
         );
-
+//fetchTokensListByChain
         fetchTokensListByChain(chain).then((list) => {
           setTokensList((p) => {
             return {
@@ -73,7 +74,7 @@ function App() {
             };
           });
         });
-
+//fetchNFTsByAddress
         fetchNFTsByAddress(chain, (account as any).address).then(nftList => {
           console.log(nftList)
         })
