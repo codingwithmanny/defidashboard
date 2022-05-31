@@ -58,7 +58,6 @@ export async function fetchTokensListByChain(chain: SupportedChain): Promise<{
 }
 
 
-
 export async function fetchNFTsByAddress(chain: SupportedChain, address: string): Promise<{
     blockchain: string;
     name: string;
